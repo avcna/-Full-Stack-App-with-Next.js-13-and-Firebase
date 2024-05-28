@@ -2,11 +2,13 @@
   "name": "experimental-app",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "cy:open": "cypress open"
   },
   "dependencies": {
     "firebase": "^10.12.1",
@@ -15,6 +17,8 @@
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@babel/register": "^7.24.6",
+    "cypress": "^13.10.0",
     "eslint": "^8",
     "eslint-config-next": "14.2.3",
     "postcss": "^8",

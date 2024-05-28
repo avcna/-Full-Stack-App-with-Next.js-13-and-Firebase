@@ -24,7 +24,12 @@ function Page() {
   return (
     <div className="wrapper min-h-screen flex items-center justify-center">
       <div className="form-wrapper">
-        <h1 className="font-medium text-[20px] text-center">Sign In</h1>
+        <h1
+          className="font-medium text-[20px] text-center"
+          data-testid="signin-tittle"
+        >
+          Sign In
+        </h1>
         <form onSubmit={handleForm} className="form">
           <label htmlFor="email">
             <p>Email</p>
@@ -49,7 +54,11 @@ function Page() {
             />
           </label>
           <br />
-          <button type="submit" className="w-full bg-green-400 rounded">
+          <button
+            type="submit"
+            className="w-full bg-green-400 rounded"
+            name="submitBtn"
+          >
             Sign up
           </button>
         </form>

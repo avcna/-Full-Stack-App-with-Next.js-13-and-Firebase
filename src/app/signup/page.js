@@ -38,7 +38,12 @@ function Page() {
   return (
     <div className="wrapper min-h-screen flex items-center justify-center">
       <div className="form-wrapper">
-        <h1 className="font-medium text-[20px] text-center">Sign Up</h1>
+        <h1
+          className="font-medium text-[20px] text-center"
+          data-testid="signup-tittle"
+        >
+          Sign Up
+        </h1>
         <form onSubmit={handleForm} className="form">
           <label htmlFor="name">
             <p>Name</p>
@@ -75,6 +80,7 @@ function Page() {
           </label>
           <br />
           <button
+            name="submitBtn"
             type="submit"
             className="w-full bg-green-400 rounded"
             onClick={() => setData({ ...data, uid: +new Date() })}

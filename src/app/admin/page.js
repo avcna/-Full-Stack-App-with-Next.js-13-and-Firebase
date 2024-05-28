@@ -21,7 +21,10 @@ function Page() {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center">
+    <section
+      className="min-h-screen flex items-center justify-center"
+      data-testid="signed in text"
+    >
       You are logged in as {username}
     </section>
   );

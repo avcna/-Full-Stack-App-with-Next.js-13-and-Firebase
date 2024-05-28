@@ -1,7 +1,21 @@
+// {
+//   "compilerOptions": {
+//     "paths": {
+//       "@/*": ["./src/*"]
+//     }
+//   }
+// }
+
 {
   "compilerOptions": {
+    "baseUrl": "./", // This must be specified if "paths" is set.
     "paths": {
-      "@/*": ["./src/*"]
-    }
-  }
+      "@/*": ["src/*"] // This maps the alias "@" to your "src/" directory.
+      },
+
+  },
+  "include": [
+    "src"
+  ]
 }
+
